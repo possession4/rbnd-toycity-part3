@@ -1,6 +1,3 @@
-require_relative "customer"
-require_relative "product"
-
 class Transaction
   attr_reader :id, :product, :customer
 
@@ -20,7 +17,7 @@ class Transaction
     @@transactions
   end
 
-  def self.find_by_id(id)
+  def self.find(id)
      @@transactions.find {|transaction| transaction.id == id} 
   end
 
