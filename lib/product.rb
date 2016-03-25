@@ -1,5 +1,6 @@
 class Product
-  attr_accessor :title, :price, :stock
+  attr_reader :title, :price, :stock
+  attr_writer :stock
 
   @@products = []
 
@@ -26,13 +27,18 @@ class Product
      @@products.select {|product| product.in_stock? == true} 
   end
 
+  def update_stock()
+    @stock = @stock - 1
+  end
+
   private
 
   def add_to_products
      if !@@products.any? { |product| product.title == @title }
      	@@products << self
-	else 
-		raise DuplicateProductError, "'#{@title}' already exists."
-	end
+  	else 
+  		raise DuplicateProductError, "'#{@title}' already exists."
+  	end
   end
+
 end
