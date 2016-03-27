@@ -26,8 +26,12 @@ class Product
      @@products.select {|product| product.in_stock? == true} 
   end
 
-  def update_stock()
-    @stock = @stock - 1
+  def purchase_stock()
+    @stock -= 1
+  end
+
+  def return_stock()
+    @stock += 1
   end
 
   private

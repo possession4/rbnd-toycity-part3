@@ -1,0 +1,12 @@
+1.) How long did you spend working on this project?
+I hit a couple of roadblocks early on and I kept walking away and coming back to it. Once I finally got past those initial roadblocks it only took around 3-4 hours to complete the rest of the project. I then spent 2-3 hours completing the features.
+
+2.) What was the most rewarding challenge you conquered?
+Not giving up when I hit those initial roadblocks. I was worried this project would take me forever and I wouldn't be able to complete it. But I returned to some old lessons and reread them and then I did some more research on the methods I was using. Turns out I was using a "select" instead of a "find" on the array and that was really the only issue.
+
+3.) What two additional features did you build? Why?
+a) The first feature I did was a better way of finding transactions. My feature allows you to search by either id, customer or product (or all 3 at one time) and print the results. I believe adding the customer and product search abilities would more closely mirror a real life situation.
+
+b) The second feature I did was a return feature because I feel with any transaction that involves a purchase of a product via a customer, you will inevitably need the ability to return that product.  I think it compliments the search feature because you will need to find the transaction (specifically the transaction id) in order to complete the return. The return itself is a transaction, and the stock updates to reflect the return.
+
+4.) Where do you still have room to grow? I believe I simply need more repitition. I want to be able to write everything without constantly looking up the syntax. I also need to do a better job and thinking things through and not getting frustrated when I experience a roadblock.
